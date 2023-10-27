@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+}
+body{
+    background-image: url(worldmap.jpg);
+}
+.container{
+    width: 98vw;
+    height: 95vh;
+    border: 5px solid rgb(138, 138, 138);
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.716);
+}
+#timezone{
+    margin-top:1vh;
+    width: 28vw;
+    height: 5vh;
+    border: 2px blue solid;
+    border-radius: 2px;
+}
+#timezone::placeholder{
+    padding-left: 10px;
+}
+#submit{
+    background-color: blue;
+    color: white;
+    width: 5vw;
+    height: 6vh;
+    border: 2px white solid;
+}
+#timecards{
+    overflow: auto;
+    width: 98vw;
+    height: 90vh;
+    display: flex;
+    scroll-behavior:auto;
+}
+.timecard{
+    width: 20vw;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.447);
+    border: 2px solid rgb(78, 78, 78);
+    padding: 1vw;
+    margin: 0.4vw;
+    margin-top: 10vh;
+}
+.timecard-dark{
+    background-color:rgba(0, 0, 0, 0.653)!important;
+    border: 2px solid rgb(78, 78, 78);
+    color: white;
+}
+.dateTime{
+    font-size: 3vw;
+    line-height: 10vh;
+    width: 20vw;
+}
+.tz{
+    font-size: 2vw;
+    padding: 1.5vw;
+    margin: auto;
+}
+
+.container-clock {
+    position: relative;
+}
+img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.clock {
+    margin-top: 1vw;
+    width: 15vw;
+}
+.hours {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0px;
+    border-left:.3vw black solid;
+    top:4.1vw;
+    height: 4.2vw;
+}
+.mins {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0px;
+    border-left:.3vw black solid;
+    top:2.85vw;
+    height: 5.5vw;
+}
+.secs {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0px;
+    border-left:.01vw red solid;
+    top: 2.4vw;
+    height: 6vw;
+}
+@media only screen and (max-width:480px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-image: url(worldmap.jpg);
+        background-position-y: 10vh;
+        background-position-x: -50vh;
+        background-repeat: no-repeat;
+    }
+    .container{ 
+        border: 5px solid rgb(138, 138, 138);
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.716);
+    }
+    #timezone{
+        margin-top: 2vw;
+        width: 60vw;
+        height: 4vh;
+        border: 2px blue solid;
+        border-radius: 2px;
+    }
+    #timezone::placeholder{
+        padding-left: 10px;
+    }
+    #submit{
+        background-color: blue;
+        color: white;
+        width: 15vw;
+        height: 4.8vh;
+        border: 2px white solid;
+    }
+    #timecards{
+        width: 98vw;
+        height: 90vh;
+        display: block;
+    }
+    .timecard{
+        width: 94vw;
+        height: 50vh;
+        padding: 1vw;
+        margin: 1vh auto;
+        padding: 0;
+        margin-top: 1vh;
+        background-color: rgba(255, 255, 255, 0.447);
+        backdrop-filter: blur(2px);
+    }
+    .dateTime{
+        font-size: 8vw;
+        width: 96vw;
+        height: 10vh;
+        margin: auto;
+        overflow: auto;
+    }
+    .tz{
+        width: 90vw;
+        font-size: 8vw;
+        overflow: auto;
+    }
+    .clock {
+        margin: auto;
+        width: 65vw;
+    }
+    .hours {
+        border-left:1vw black solid;
+        top:15vw;
+        height: 17vw;
+    }
+    .mins {
+        border-left:1vw black solid;
+        top:10.5vw;
+        height: 21vw;
+    }
+    .secs {
+        border-left:.4vw red solid;
+        top: 7.4vw;
+        height: 25vw;
+    }
+
+}
